@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOQ Calculator</title>
+    <link rel="stylesheet" href="styleoeq.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EOQ Calculator</h1>
+        <div>
+            <label for="demand">Demanda (Unidades/Año):</label>
+            <input type="number" id="demand" min="1">
+        </div>
+        <div>
+            <label for="orderingCost">Costo de pedido ($/Pedido):</label>
+            <input type="number" id="orderingCost" min="1">
+        </div>
+        <div>
+            <label for="holdingCost">Costo de tenencia ($/unidad/Año):</label>
+            <input type="number" id="holdingCost" min="0">
+        </div>
+        <button onclick="calculateEOQ()">Calcular EOQ</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="scripteoq.js"></script>
+</body>
+</html>

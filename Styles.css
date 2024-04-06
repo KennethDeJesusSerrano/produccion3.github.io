@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/302132.jpg'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav, .about-menu {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+  }
+  
+  nav ul, .about-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li, .about-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a, .about-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover, .about-menu ul li a:hover {
+    color: #ccc; /* Color del enlace al pasar el cursor */
+  }
+  

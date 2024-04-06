@@ -1,0 +1,75 @@
+/* Tranquil and Modern Theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height on most screens */
+    background-image: url('img/nature-background.jpg');
+    background-size: cover; /* Scales image to fill viewport */
+    background-repeat: no-repeat; /* Prevents image tiling */
+    background-attachment: fixed; /* Fixes image position on scroll */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #3498db; /* Blue for a professional feel */
+    font-size: 2rem; /* Larger heading for better readability */
+    text-align: center; /* Ensures centered heading on all screen sizes */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  /* Adds space between form elements */
+  }
+  
+  label,
+  input[type="text"],
+  input[type="number"] {
+    width: 100%; /* Full-width input fields */
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Lighter border color */
+    border-radius: 4px; /* Subtle rounded corners */
+    box-sizing: border-box;
+    font-size: 1rem; /* Consistent font size for form elements */
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: #428bca; /* Blue for a cohesive look */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #357ebd; /* Darker blue on hover for a clear visual cue */
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Lighter background for better contrast */
+    text-align: center; /* Ensures centered text content */
+  }
+  
+  /* Add media queries for responsive design (optional) */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens (e.g., mobile) */
+    h2 { font-size: 1.5rem; } /* Reduce heading size on smaller screens */
+    input[type="text"],
+    input[type="number"] {
+      font-size: 0.9rem; /* Adjust input field font size */
+    }
+  }
+  

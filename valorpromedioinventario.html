@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valor Promedio del Inventario</title>
+    <link rel="stylesheet" href="valorinventario.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Valor Promedio del Inventario</h2>
+        <form id="inventoryForm">
+            <div class="form-group">
+                <label for="demand">Demanda (D):</label>
+                <input type="number" id="demand" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Tiempo (T):</label>
+                <input type="number" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="safetyStock">Stock de Seguridad (SS):</label>
+                <input type="number" id="safetyStock" required>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

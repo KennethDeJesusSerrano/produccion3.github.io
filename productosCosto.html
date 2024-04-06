@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Costo de Mantenimiento Correctivo</title>
+    <link rel="stylesheet" href="stylescosto.css">
+</head>
+<body>
+
+<h2>Calculadora de Costo de Mantenimiento Correctivo</h2>
+
+<form id="formulario">
+    <label for="horasTotales">Horas Totales:</label>
+    <input type="number" id="horasTotales" required>
+
+    <label for="mtbfPorcentaje">MTBF (%):</label>
+    <input type="number" id="mtbfPorcentaje" required>
+
+    <label for="duracionTarea">Duración de la Tarea (horas):</label>
+    <input type="number" id="duracionTarea" required>
+
+    <label for="costoHoraTrabajo">Costo por Hora de Trabajo:</label>
+    <input type="number" id="costoHoraTrabajo" required>
+
+    <label for="costoRepuestos">Costo de Repuestos:</label>
+    <input type="number" id="costoRepuestos" required>
+
+    <label for="costoTareasOperacionales">Costo de Tareas Operacionales:</label>
+    <input type="number" id="costoTareasOperacionales" required>
+
+    <label for="retrasoLogistico">Retraso Logístico (horas):</label>
+    <input type="number" id="retrasoLogistico" required>
+
+    <label for="costoHoraParadaProduccion">Costo por Hora de Parada de Producción:</label>
+    <input type="number" id="costoHoraParadaProduccion" required>
+
+    <label for="costoFallaVezUnica">Costo de Falla de Vez Única:</label>
+    <input type="number" id="costoFallaVezUnica" required>
+
+    <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+</form>
+
+<div id="resultado"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
